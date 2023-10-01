@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - W2</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pengontrol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Pengontrol</h1>
+    <button id="lockdownButton">Lockdown Website Utama</button>
+
+    <script>
+        document.getElementById('lockdownButton').addEventListener('click', function() {
+            // Mengirim pesan ke website utama untuk melakukan lockdown
+            window.parent.postMessage('lockdown', 'https://honbard.github.io/P1/');
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
